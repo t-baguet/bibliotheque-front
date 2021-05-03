@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RechercheComponent } from './pages/recherche/recherche.component';
 import { BarreRechercheComponent } from './components/barre-recherche/barre-recherche.component';
 import { ResultatRechercheComponent } from './components/resultat-recherche/resultat-recherche.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ResultatRechercheComponent } from './components/resultat-recherche/resu
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
