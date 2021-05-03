@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RechercheComponent } from './pages/recherche/recherche.component';
 
-const routes: Routes = [];
+const appRoutes: Routes = [
+  { path: '', component: RechercheComponent },
+  { path: '**', component:  RechercheComponent}
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
